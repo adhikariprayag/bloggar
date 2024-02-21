@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root{
+  --dark: #202026;
+  --light: #FFFFFF;
+  --sky: #3756F7;
+}
+
+body{
+  background-color: var(--dark) !important;
+  font-family: "Geologica", sans-serif !important;
+  color: #FFFFFF !important;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #FFFFFF !important;
+  transition: all 0.2s !important;
+}
+
+a:hover{
+  color: var(--sky) !important;
+}
+
+.container{
+  max-width: 1400px !important;
+  margin: auto !important;
+}
+
+.d-flex{
+  flex-wrap: wrap !important;
+}
