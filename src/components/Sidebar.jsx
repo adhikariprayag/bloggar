@@ -26,11 +26,11 @@ function Sidebar() {
                         </div>
                         <div className='py-4'>
                             <ul className='m-0 px-5 py-3 '>
-                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i class="ri-arrow-drop-right-line"></i> Lifestyle</Link></li>
-                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i class="ri-arrow-drop-right-line"></i> Fashion</Link></li>
-                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i class="ri-arrow-drop-right-line"></i> Health</Link></li>
-                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i class="ri-arrow-drop-right-line"></i> Travel</Link></li>
-                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i class="ri-arrow-drop-right-line"></i> Business</Link></li>
+                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i className="ri-arrow-drop-right-line"></i> Lifestyle</Link></li>
+                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i className="ri-arrow-drop-right-line"></i> Fashion</Link></li>
+                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i className="ri-arrow-drop-right-line"></i> Health</Link></li>
+                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i className="ri-arrow-drop-right-line"></i> Travel</Link></li>
+                                <li className='border-bottom py-3 border-secondary '><Link to="/" className='fw-medium fs-5 text-secondary '><i className="ri-arrow-drop-right-line"></i> Business</Link></li>
                             </ul>
                         </div>
                     </div>

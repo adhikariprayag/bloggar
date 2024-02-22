@@ -8,7 +8,7 @@ function Navbar() {
   const [scrolltopdata, setscrolltopdata] = useState('')
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY < 15) {
+      if (window.scrollY < 20) {
         setscrolltopdata('');
       }
       else {
@@ -18,9 +18,9 @@ function Navbar() {
   }, [])
 
   //Menu button
-  const [handlemenu, sethandlemenu] = useState()
+  const [handlemenu, sethandlemenu] = useState('')
   function handle() {
-    sethandlemenu( prevmenu => (prevmenu === ''? 'down' : ''))
+    sethandlemenu( prevmenu => (prevmenu === '' ? 'down' : ''))
   }
 
   return (
@@ -28,7 +28,7 @@ function Navbar() {
 
       <header className={`navbar ${scrolltopdata}`}>
         <nav className='container d-flex align-items-center '>
-          <div>
+          <div className='d-flex align-items-center '>
             <Link to="/"><img src={Logo} alt="" /></Link>
           </div>
 
@@ -45,16 +45,16 @@ function Navbar() {
           </div>
 
           <div>
-            <ul className='d-flex gap-4 fs-3 '>
-              <li><i className="ri-search-line"></i></li>
-              <li className='d-lg-none'><i className="ri-menu-3-line btn text-light fs-3 " onClick={handle}></i></li>
+            <ul className='d-flex gap-4 fs-3 align-items-center '>
+              <li><i className="ri-search-line fs-3 "></i></li>
+              <li className='d-lg-none' onClick={handle}><i className="ri-menu-3-line btn text-light fs-3 " ></i></li>
             </ul>
           </div>
         </nav>
       </header>
 
       <div className={`mob-menu d-flex align-items-center flex-column gap-4 ${handlemenu} `} >
-        <div><i class="ri-arrow-drop-up-line btn border border-2 rounded-5 fs-3 text-light " onClick={handle} ></i></div>
+        <div className=''><i className="ri-arrow-drop-up-line btn border border-2 rounded-5 fs-3 text-light " onClick={handle} ></i></div>
         <ul className='d-flex flex-column gap-4 m-0'>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/">Pages</Link></li>

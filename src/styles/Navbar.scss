@@ -1,5 +1,5 @@
 .navbar {
-    padding-block: 30px;
+    padding-block: 20px;
     transition: all 0.5s;
     background-color: #202026;
 }
@@ -11,7 +11,7 @@
     height: 100%;
     background-color: #2C2C32;
     left: 0;
-    top: -100%;
+    top: -500%;
     justify-content: center;
     text-align: center;
     transition: all 0.5s;
@@ -20,8 +20,9 @@
 .mob-menu.down{
     top: 0;
 }
+
 .navbar.scrolled {
-    padding-block: 20px;
+    padding: 20px 0px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: all 0.5s;
     position: fixed;
