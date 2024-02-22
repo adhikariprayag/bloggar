@@ -10,7 +10,7 @@ function Home() {
       <Navbar />
       <Sidebar />
       <main className='home'>
-        <div className='container '>
+        <div className='container py-4 '>
           <div className="grid-container">
 
             <div className="content grid-box-1">
