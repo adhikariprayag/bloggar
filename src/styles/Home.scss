@@ -6,9 +6,15 @@
         gap: 10px;
 
         @media (min-width: 1100px) {
-            grid-template-columns: 2fr  1fr !important;
+            grid-template-columns: 2fr 1fr !important;
             grid-template-rows: auto !important;
         }
+
+        @media (min-width:600px) and (max-width:800px) {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+        }
+
 
         a {
             color: #fff;
@@ -44,6 +50,9 @@
             background-color: white;
             border-radius: 25px;
             padding-inline: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .grid-box-1 {
@@ -58,6 +67,13 @@
                 grid-row-start: 1;
                 grid-row-end: 3;
             }
+
+            @media (min-width:600px) and (max-width:800px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
         }
 
         .grid-box-2 {
@@ -71,6 +87,13 @@
                 grid-column-end: 4;
                 grid-row-start: 1;
                 grid-row-end: 2;
+            }
+
+            @media (min-width:600px) and (max-width:800px) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
             }
         }
 
@@ -87,6 +110,13 @@
                 grid-row-start: 2;
                 grid-row-end: 3;
             }
+
+            @media (min-width:600px) and (max-width:800px) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
         }
 
         .grid-box-4 {
@@ -100,6 +130,13 @@
                 grid-column-end: 4;
                 grid-row-start: 2;
                 grid-row-end: 3;
+            }
+
+            @media (min-width:600px) and (max-width:800px) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
             }
         }
     }
