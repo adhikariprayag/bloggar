@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
 
-      <header className={`navbar ${scrolltopdata}`}>
+      <header className={`navbar ${scrolltopdata} ${handlemenu}`}>
         <nav className='container d-flex align-items-center '>
           <div className='d-flex align-items-center '>
             <Link to="/"><img src={Logo} alt="" /></Link>
@@ -50,21 +50,22 @@ function Navbar() {
               <li className='d-lg-none' onClick={handle}><i className="ri-menu-3-line btn text-light fs-3 " ></i></li>
             </ul>
           </div>
+
+          <div className={`d-items w-100 py-4 ${handlemenu} d-none animate__animated animate__fadeIn`}>
+          <ul className='d-flex flex-column align-items-center gap-5 m-0 p-0 flex-wrap '>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/">Pages</Link></li>
+              <li><Link to="/">Lifestyle</Link></li>
+              <li><Link to="/">Foods</Link></li>
+              <li><Link to="/">Business</Link></li>
+              <li><Link to="/">Travels</Link></li>
+              <li><Link to="/">Post</Link></li>
+            </ul>
+          </div>
         </nav>
       </header>
 
-      <div className={`mob-menu d-flex align-items-center flex-column gap-4 ${handlemenu} `} >
-        <div className=''><i className="ri-arrow-drop-up-line btn border border-2 rounded-5 fs-3 text-light " onClick={handle} ></i></div>
-        <ul className='d-flex flex-column gap-4 m-0'>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/">Pages</Link></li>
-          <li><Link to="/">Lifestyle</Link></li>
-          <li><Link to="/">Foods</Link></li>
-          <li><Link to="/">Business</Link></li>
-          <li><Link to="/">Travels</Link></li>
-          <li><Link to="/">Post</Link></li>
-        </ul>
-      </div>
+
 
     </>
   )

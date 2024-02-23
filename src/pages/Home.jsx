@@ -10,7 +10,7 @@ function Home() {
       <Navbar />
       <Sidebar />
       <main className='home'>
-        <div className='container py-4 '>
+        <div className='container py-2 '>
           <div className="grid-container">
 
             <div className="content grid-box-1">
@@ -72,6 +72,9 @@ function Home() {
             </div>
           </div>
 
+          <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, quis sapiente impedit ea quisquam dolorem illo repellendus. Assumenda laudantium quisquam nostrum rerum ad illum debitis, alias quae dolore dicta, laborum, delectus necessitatibus distinctio fugiat optio. Harum, deserunt quibusdam! Mollitia repudiandae saepe minus? Expedita, et illum dolor maiores cum a repellendus soluta blanditiis vitae, eos assumenda. Ex voluptas nihil aperiam sapiente ab dolore magnam dolor perferendis at. Magnam, voluptate eaque aperiam aspernatur libero hic? Eum iste, veniam ad vitae deleniti tempore aliquid ab consequatur commodi corrupti perspiciatis sapiente illo exercitationem, dolor aut voluptatem cumque. Aspernatur dolorem minus, ut dolorum distinctio delectus.
+          </div>
         </div>
       </main>
     </>
